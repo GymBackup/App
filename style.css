@@ -204,6 +204,11 @@ a.coh-style-cta-transparent-bg-white-color-white-border:hover {
   font-weight: bold;
 }
 
+/* Light grey background when accordion is expanded (active) */
+.accordion-button:not(.collapsed) {
+  background-color: #f1f1f1; /* light grey */
+  color: inherit; /* optional: keep text color unchanged */
+}
 
 
 .accordion-button::after {
