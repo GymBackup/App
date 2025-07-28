@@ -1,154 +1,132 @@
-/* Reset & Basics */
-* {
+/* Base styles */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #fff;
+  color: #000;
+}
+
+h1, h2, p {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
-  font-family: "Helvetica Neue", sans-serif;
 }
 
-body {
-  background-color: #f6f6f6;
-  color: #222;
-  line-height: 1.6;
-}
-
-/* Layout Container */
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 2rem 1rem;
-}
-
-/* Header / Hero */
-.hero {
-  background: linear-gradient(to right, #202124, #2d2f34);
+/* Hero section */
+.coh-container.ssa-component.coh-ce-cpt_wpp_hero_trial_training-c9fe6181 {
+  background-image: url('/sites/g/files/tbchtk381/files/styles/mobile_resize_width_only_600xauto_webp/public/2025-01/fitness-first-kurzhantel-hero.jpg.webp?itok=-cCCzboX');
+  background-size: cover;
+  background-position: center;
+  padding: 60px 20px;
+  text-align: center;
   color: #fff;
-  padding: 4rem 1rem;
-  text-align: center;
+  position: relative;
+  z-index: 1;
 }
 
-.hero h1 {
-  font-size: 2.8rem;
-  margin-bottom: 1rem;
+.coh-container.coh-ce-cpt_wpp_hero_trial_training-9f115a20 {
+  margin-top: 20px;
 }
 
-.hero p {
-  font-size: 1.25rem;
-  margin-bottom: 2rem;
-}
-
-.cta-button {
-  background-color: #ff3040;
+a.coh-style-link-red-bg-white-color {
+  background-color: #e30613;
   color: #fff;
-  border: none;
-  padding: 1rem 2rem;
-  font-size: 1.1rem;
-  cursor: pointer;
-  border-radius: 4px;
-  transition: background 0.3s ease;
-}
-
-.cta-button:hover {
-  background-color: #e12634;
-}
-
-/* Section */
-.section {
-  padding: 3rem 1rem;
-  background-color: #fff;
-  border-bottom: 1px solid #eee;
-}
-
-.section h2 {
-  font-size: 2rem;
-  margin-bottom: 1rem;
-  text-align: center;
-}
-
-.section p {
-  font-size: 1.1rem;
-  max-width: 800px;
-  margin: 0 auto 2rem;
-  text-align: center;
-}
-
-/* Form */
-.form-container {
-  background-color: #fff;
-  padding: 2rem;
-  border-radius: 8px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
-  max-width: 600px;
-  margin: 0 auto;
-}
-
-form label {
-  display: block;
-  margin-bottom: 0.5rem;
+  padding: 12px 24px;
+  text-decoration: none;
   font-weight: bold;
-}
-
-form input,
-form select,
-form textarea {
-  width: 100%;
-  padding: 0.75rem;
-  margin-bottom: 1.5rem;
-  border: 1px solid #ccc;
   border-radius: 4px;
-  font-size: 1rem;
+  display: inline-block;
+  transition: background-color 0.3s;
 }
 
-form textarea {
-  resize: vertical;
+a.coh-style-link-red-bg-white-color:hover {
+  background-color: #b0040f;
 }
 
-form button {
-  width: 100%;
-  background-color: #ff3040;
+a.coh-style-cta-transparent-bg-white-color-white-border {
+  border: 2px solid #fff;
   color: #fff;
-  padding: 1rem;
-  font-size: 1.1rem;
-  border: none;
+  padding: 10px 22px;
+  text-decoration: none;
+  font-weight: bold;
   border-radius: 4px;
+  display: inline-block;
+  margin-left: 10px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+a.coh-style-cta-transparent-bg-white-color-white-border:hover {
+  background-color: #fff;
+  color: #e30613;
+}
+
+/* Accordion styles */
+.coh-accordion-tabs {
+  margin-top: 60px;
+  background-color: #f8f8f8;
+  padding: 20px;
+  border-radius: 8px;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.coh-accordion-tabs-nav li {
+  list-style: none;
+}
+
+.coh-accordion-tabs-nav a {
+  display: block;
+  padding: 15px;
+  font-weight: bold;
+  color: #000;
+  text-decoration: none;
+  border-bottom: 1px solid #ccc;
+  transition: background 0.3s;
+}
+
+.coh-accordion-tabs-nav a:hover {
+  background-color: #eee;
+}
+
+.coh-accordion-title {
   cursor: pointer;
+  background: #fff;
+  padding: 15px;
+  font-weight: bold;
+  border-bottom: 1px solid #ccc;
 }
 
-form button:hover {
-  background-color: #e12634;
+.coh-accordion-tabs-content {
+  padding: 15px;
+  background-color: #fff;
+  border-bottom: 1px solid #ccc;
+  display: none;
 }
 
-/* Features List */
-.features {
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
-  max-width: 900px;
-  margin: 2rem auto;
+.coh-accordion-tabs-content p,
+.coh-accordion-tabs-content ul {
+  margin: 0 0 10px 0;
+  padding: 0;
+  font-size: 14px;
+  line-height: 1.6;
+  color: #333;
 }
 
-.feature-box {
-  background-color: #f9f9f9;
-  border-left: 5px solid #ff3040;
-  padding: 1rem 1.5rem;
-  border-radius: 4px;
+.coh-wysiwyg ul {
+  padding-left: 20px;
 }
 
-.feature-box h3 {
-  font-size: 1.2rem;
-  margin-bottom: 0.5rem;
-  color: #202124;
+.coh-wysiwyg li {
+  margin-bottom: 6px;
 }
 
-.feature-box p {
-  font-size: 1rem;
-  color: #444;
-}
+@media (max-width: 768px) {
+  .coh-accordion-tabs {
+    padding: 15px;
+  }
 
-/* Footer */
-footer {
-  text-align: center;
-  padding: 2rem 1rem;
-  font-size: 0.9rem;
-  color: #777;
+  .coh-accordion-title,
+  .coh-accordion-tabs-content {
+    font-size: 14px;
+  }
 }
