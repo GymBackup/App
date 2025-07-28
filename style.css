@@ -154,10 +154,28 @@ a.coh-style-cta-transparent-bg-white-color-white-border:hover {
     padding: 15px;
   }
 
-  .coh-accordion-title,
-  .coh-accordion-tabs-content {
-    font-size: 14px;
-  }
+.coh-accordion-title,
+.coh-accordion-tabs-content {
+  font-size: 14px;
+}
+
+
+.accordion-button {
+font-weight: bold;
+}
+
+
+/* Light grey background when accordion is expanded (active) */
+.accordion-button:not(.collapsed) {
+  background-color: #f1f1f1; /* light grey */
+  color: inherit; /* optional: keep text color unchanged */
+}
+
+
+.accordion-button::after {
+  filter: brightness(0.5); /* darken the arrow a bit */
+}
+  
 
   /* FAQ section */
 }
@@ -212,17 +230,4 @@ a.coh-style-cta-transparent-bg-white-color-white-border:hover {
   padding-top: 0.5rem;
 }
 
-.accordion-button {
-  font-weight: bold;
-}
 
-/* Light grey background when accordion is expanded (active) */
-.accordion-button:not(.collapsed) {
-  background-color: #f1f1f1; /* light grey */
-  color: inherit; /* optional: keep text color unchanged */
-}
-
-
-.accordion-button::after {
-  filter: brightness(0.5); /* darken the arrow a bit */
-}
