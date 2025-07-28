@@ -3,70 +3,63 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Gym Backup – Trainingshilfe für dein Gym</title>
+  <title>Gym Backup</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-
-  <!-- Hero Section -->
-  <div class="hero-container">
-    <div class="hero-content">
-      <h1>Kostenlose Trainingshilfe</h1>
-      <p>Erhalte Unterstützung, wenn dein Trainingsplan durcheinandergerät</p>
-      <form class="hero-form" action="#" method="post">
+  <header>
+    <h1>GymBackup</h1>
+  </header>
+  <main>
+     <style>
+    .hero-section {
+      background-image: url('https://images.unsplash.com/photo-1597452485670-5f32106899c3?q=80&w=778&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+      background-size: cover;
+      background-position: center;
+      padding: 60px 20px;
+      color: white;
+      text-align: center;
+    }
+    .signup-form input[type="email"] {
+      padding: 10px;
+      width: 300px;
+      max-width: 90%;
+      border: none;
+      border-radius: 4px;
+      margin-bottom: 10px;
+    }
+    .signup-form button {
+      background-color: #e30613;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 4px;
+      font-size: 1rem;
+      cursor: pointer;
+    }
+    .signup-form {
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+  <div class="hero-section">
+    <h1>Kennst du das?</h1>
+    <p>Du hast dir einen Trainingsplan überlegt, aber dein Gerät ist belegt? <br>Gym Backup hilft dir, spontan die perfekte Alternative zu finden.</p>
+    <div class="signup-form">
+      <form action="https://formspree.io/f/your-form-id" method="POST">
         <input type="email" name="email" placeholder="Deine E-Mail-Adresse" required />
-        <button type="submit">Mehr Infos & Interviewpartner werden</button>
+        <br />
+        <button type="submit">Mehr Infos & Interview-Partner werden</button>
       </form>
-    </div>
-    <div class="hero-image">
-      <img src="https://images.unsplash.com/photo-1597452485670-5f32106899c3?q=80&w=778&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Trainierender Mann" />
     </div>
   </div>
 
-  <!-- Value Proposition Accordion -->
-  <section class="accordion-section">
-    <h2>Was dir die App bringt</h2>
-
-    <div class="accordion">
-      <button class="accordion-toggle">✓ Immer ein Trainingsplan B zur Hand</button>
-      <div class="accordion-content">
-        <p>Falls dein Gerät belegt ist oder du spontan umplanen musst – die App schlägt dir passende Alternativen vor.</p>
-      </div>
-
-      <button class="accordion-toggle">✓ Weniger Zeit mit Planen, mehr Zeit fürs Training</button>
-      <div class="accordion-content">
-        <p>Du bekommst sofort Vorschläge basierend auf dem aktuellen Equipment, deinem Split und Ziel.</p>
-      </div>
-
-      <button class="accordion-toggle">✓ Basierend auf realen Gym-Situationen</button>
-      <div class="accordion-content">
-        <p>Die App basiert auf echten Nutzererfahrungen aus deutschen Fitnessstudios.</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- Footer -->
+  </main>
   <footer>
     <p style="font-size: 0.8rem; color: #888; text-align: center;">
-      <a href="#datenschutz">Datenschutzerklärung</a>
+      <a href="datenschutz.html">Datenschutzerklärung</a>
     </p>
   </footer>
-
-  <!-- Accordion Script -->
-  <script>
-    document.querySelectorAll('.accordion-toggle').forEach(btn => {
-      btn.addEventListener('click', () => {
-        btn.classList.toggle('active');
-        const content = btn.nextElementSibling;
-        if (content.style.maxHeight) {
-          content.style.maxHeight = null;
-        } else {
-          content.style.maxHeight = content.scrollHeight + 'px';
-        }
-      });
-    });
-  </script>
-
 </body>
 </html>
-
