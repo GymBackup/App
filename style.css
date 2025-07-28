@@ -21,6 +21,14 @@ header h1 {
   letter-spacing: 1px;
 }
 
+.sticky-header {
+  position: sticky;
+  top: 0;
+  background-color: white; /* or your page background */
+  z-index: 1000; /* makes sure it stays above other elements */
+  padding: 1rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* optional for a shadow effect */
+}
 
 h1, h2, p {
   margin: 0;
