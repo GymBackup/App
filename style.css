@@ -24,9 +24,13 @@ header h1 {
 .sticky-header {
   position: sticky;
   top: 0;
-  background-color: white; /* or your page background */
+  background: #000;
+  padding: 1rem 2rem;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   z-index: 1000; /* makes sure it stays above other elements */
-  padding: 1rem;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* optional for a shadow effect */
 }
 
