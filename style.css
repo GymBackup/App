@@ -192,3 +192,17 @@ a.coh-style-cta-transparent-bg-white-color-white-border:hover {
   max-height: 200px;
   padding-top: 0.5rem;
 }
+
+.accordion-button {
+  font-weight: bold;
+}
+
+/* Light grey background when accordion is expanded (active) */
+.accordion-button:not(.collapsed) {
+  background-color: #f1f1f1; /* light grey */
+  color: inherit; /* optional: keep text color unchanged */
+}
+
+.accordion-button::after {
+  filter: brightness(0.5); /* darken the arrow a bit */
+}
